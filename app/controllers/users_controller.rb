@@ -14,6 +14,7 @@ class UsersController < ApplicationController
     end
   end
   
+  
   def show
     @items = @user.items.group(:item_id)
   end
@@ -27,4 +28,5 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation)
   end
+  
 end
