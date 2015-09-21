@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
+# 本番ではpostgressを使用する
+gem 'pg', group: :production
 
 
 # Use SCSS for stylesheets
@@ -39,8 +41,6 @@ gem 'amazon-ecs'
 group :production do
   gem 'puma'
   gem 'rails_12factor'
-  # 本番ではpostgressを使用する
-  gem 'pg', group: :production
 end
 
 # Use Capistrano for deployment
