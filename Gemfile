@@ -41,7 +41,6 @@ group :production do
   gem 'puma'
   gem 'rails_12factor'
   gem 'pg', group: :production
- user_item
 end
 
 # Use Capistrano for deployment
