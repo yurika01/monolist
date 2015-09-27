@@ -37,7 +37,7 @@ gem 'amazon-ecs'
 group :production do
   gem 'puma'
   gem 'rails_12factor'
-  gem 'pg'
+  gem 'pg', group: :production
 end
 
 # Use Capistrano for deployment
